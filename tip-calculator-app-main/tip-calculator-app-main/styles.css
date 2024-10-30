@@ -1,6 +1,8 @@
 .container {
     display: flex;
     flex-direction: row;
+    font-family: 'Space Mono', monospace;
+    justify-content: center;
 }
 
 
@@ -15,7 +17,19 @@
 .right {
     display: flex;
     flex-direction: column;
+    
 }
 
 
-.Tip
+.tip-amount {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.total {
+
+    display: flex;
+    flex-direction: row;
+}
