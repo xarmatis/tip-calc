@@ -1,7 +1,19 @@
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan-2: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan-1: hsl(184, 14%, 56%);
+    --Light-grayish-cyan-2: hsl(185, 41%, 84%);
+    --Light-grayish-cyan-1: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --red: rgb(255, 102, 102);
+  }
+
+
 body {
-    background-color: var(--Light-grayish-cyan-2);
+   
     font-family: "Space Mono", "Courier New", monospace;
-  
+    background-color: hsl(185, 41%, 84%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -21,12 +33,21 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: hsl(189, 41%, 97%);;
+    padding: 3%;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: auto;
 }
+
+
+
 
 
 .left {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .buttons {
@@ -34,16 +55,70 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
     margin-top: 10px;
+    
   }
+
+#five{
+    color: var(--Light-grayish-cyan-1);
+    background-color: var(--Very-dark-cyan);
+    letter-spacing: 1.2px;
+}
+
+#ten{
+    color: var(--Light-grayish-cyan-1);
+    background-color: var(--Very-dark-cyan);
+    letter-spacing: 1.2px;
+}
+#fifteen{
+    color: var(--Light-grayish-cyan-1);
+    background-color: var(--Very-dark-cyan);
+    letter-spacing: 1.2px;
+}
+#twenty-five{
+    color: var(--Light-grayish-cyan-1);
+    background-color: var(--Very-dark-cyan);
+    letter-spacing: 1.2px;
+}
+#fifty{
+    color: var(--Light-grayish-cyan-1);
+    background-color: var(--Very-dark-cyan);
+    letter-spacing: 1.2px;
+}
+
+#five:hover{
+    background-color: var(--Light-grayish-cyan-2);
+    color: var(--Very-dark-cyan);
+}
+#ten:hover {
+    background-color: var(--Light-grayish-cyan-2);
+    color: var(--Very-dark-cyan);
+}
+#fifteen:hover{
+  background-color: var(--Light-grayish-cyan-2);
+  color: var(--Very-dark-cyan);
+}
+#twenty-five:hover{
+    background-color: var(--Light-grayish-cyan-2);
+    color: var(--Very-dark-cyan);
+}
+#fifty:hover{
+    background-color: var(--Light-grayish-cyan-2);
+    color: var(--Very-dark-cyan);
+}
+
+
 
 
 
 .right {
     display: flex;
     flex-direction: column;
-    background-color: hsl(183, 100%, 15%);
+    background-color: hsl(183, 100%, 15%);;
+    border-radius: 5px;
+    width: 50%;
+    padding: 1.1rem;
     
 }
 
@@ -63,9 +138,54 @@ body {
 
 
 
+#reset {
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    font-family: "Space Mono", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Dark-grayish-cyan-2);
+}
+
+#custon-tip{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Space Mono", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#Reset {
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    font-family: "Space Mono", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Dark-grayish-cyan-2);
 
 
+}
 
+
+#Reset:enabled {
+    background-color: var(--Strong-cyan);
+    cursor: pointer;
+}
+#Reset:enabled:hover {
+    background-color: var(--Light-grayish-cyan-2);
+}
 
 #person {
     color: hsl(186, 14%, 43%);
