@@ -22,6 +22,13 @@ function calculateTip() {
   const tipAmount = (bill * tipPercentage) / people;
   const total = (bill / people) + tipAmount;
 
+  tipAmountDisplay.style.fontSize = '2rem';
+  tipAmountDisplay.style.fontWeight = 'bold';
+  tipAmountDisplay.style.color = 'hsl(172, 67%, 45%)';
+
+  totalDisplay.style.fontSize = '2rem';
+  totalDisplay.style.fontWeight = 'bold';
+  totalDisplay.style.color = 'hsl(172, 67%, 45%)';
   
   tipAmountDisplay.textContent = `$${tipAmount.toFixed(2)}`;
   totalDisplay.textContent = `$${total.toFixed(2)}`;

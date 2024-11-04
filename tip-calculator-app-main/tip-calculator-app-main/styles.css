@@ -50,15 +50,35 @@ body {
     width: 50%;
 }
 
+#total {
+    width: 80%;
+}
+
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr) ;
     gap: 1rem;
     max-width: 100%;
     width: 80%;
     margin-top: 10px;
     
-  }
+    
+}
+
+.buttons button, #custom-tip {
+    width: 100%; 
+    padding: 0.1rem; 
+    box-sizing: border-box; 
+    font-family: 'Space Mono', monospace; 
+    font-size: 1rem;
+}
+#custom-tip {
+    border-radius: 5px; /* Optional: styling for the input */
+    text-align: center;
+    border: 1px solid var(--Dark-grayish-cyan-2); /* Optional: border styling */
+}
+
+
 
 #five{
     color: var(--Light-grayish-cyan-1);
@@ -109,7 +129,9 @@ body {
 }
 
 
-
+#people {
+    width: 80%;
+}
 
 
 .right {
@@ -118,7 +140,7 @@ body {
     background-color: hsl(183, 100%, 15%);;
     border-radius: 5px;
     width: 50%;
-    padding: 1.1rem;
+    padding: 1.9rem;
     
 }
 
